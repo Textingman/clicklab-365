@@ -3,7 +3,7 @@
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Phone } from 'lucide-react';
 
 function VerifyPageContent() {
   const searchParams = useSearchParams();
@@ -65,16 +65,16 @@ function VerifyPageContent() {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#F9FAFB] to-white flex items-center justify-center px-4">
-      <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8">
+    <div className="min-h-screen bg-gradient-to-b from-[#F9FAFB] to-white flex items-center justify-center px-4 py-8">
+      <div className="max-w-xl w-full bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-1.5 before:bg-gradient-to-r before:from-[#4CAF50] before:to-[#45a049] before:rounded-t-2xl before:shadow-[0_8px_24px_rgba(76,175,80,0.6)]">
         {/* Logo/Brand */}
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-6 sm:mb-8">
           <Image 
             src="/EDMVerify.png"
             alt="EDM Verify"
             width={320} 
             height={107}
-            className="h-24 w-auto"
+            className="h-16 sm:h-20 md:h-24 w-auto"
           />
         </div>
 
@@ -84,29 +84,39 @@ function VerifyPageContent() {
             <CheckCircle className="w-12 h-12 text-[#4CAF50]" />
           </div>
           
-          <h2 className="text-2xl font-bold text-[#1F2937] mb-4">
-            Verify Your Number
+          <h2 className="text-xl sm:text-2xl font-bold text-[#1F2937] mb-6 px-2">
+            Sorry we missed your call!
           </h2>
           
           {/* Phone Input Field */}
-          <div className="mb-8">
+          <div className="mb-6">
             <input
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               placeholder="Enter phone number"
-              className="w-full bg-gray-50 rounded-lg p-6 text-3xl font-bold text-[#1F2937] tracking-wider text-center border-2 border-[#E5E7EB] focus:border-[#4CAF50] focus:outline-none transition-colors"
+              className="w-full bg-gray-50 rounded-lg p-3 sm:p-4 text-lg sm:text-xl font-bold text-[#1F2937] tracking-wider text-center border-2 border-[#E5E7EB] focus:border-[#4CAF50] focus:outline-none transition-colors"
             />
+          </div>
+
+          {/* Progress/Urgency Indicator */}
+          <div className="mb-6 text-center">
+            <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-[#6B7280]">
+              <div className="flex items-center gap-1">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span>3 agents available now</span>
+              </div>
+            </div>
           </div>
 
           {/* Confirm Button */}
           <button
             onClick={handleConfirm}
             disabled={isRedirecting}
-            className={`w-full py-4 px-6 rounded-lg text-lg font-semibold transition-all ${
+            className={`w-full py-3 sm:py-4 px-4 sm:px-6 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 ${
               isRedirecting
                 ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-[#4CAF50] hover:bg-[#45a049] text-white shadow-lg hover:shadow-xl'
+                : 'bg-gradient-to-r from-[#4CAF50] to-[#45a049] hover:from-[#45a049] hover:to-[#4CAF50] text-white shadow-lg hover:shadow-2xl hover:scale-105 cursor-pointer'
             }`}
           >
             {isRedirecting ? (
@@ -118,9 +128,10 @@ function VerifyPageContent() {
                 Redirecting...
               </span>
             ) : (
-              "Submit"
+              <span className="block sm:inline">Verify Number</span>
             )}
           </button>
+          <p className="text-xs sm:text-sm text-[#1F2937] mt-2 font-medium">✓ 12,400+ verified this week</p>
         </div>
 
         {/* Footer */}
