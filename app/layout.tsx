@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EDM Verify",
+  title: "Volt Verify",
   description: "SMS verification for businesses",
 };
 

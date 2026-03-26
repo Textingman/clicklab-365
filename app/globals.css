@@ -2,21 +2,21 @@
 
 :root {
   --background: #FFFFFF;
-  --foreground: #4A4A4A;
-  --primary: #FFA97E;
-  --accent-soft: #FFC6AE;
-  --accent-warm: #FDC5BF;
-  --bg-light: #FEE5D9;
-  --text-headline: #4A4A4A;
-  --text-body: #757575;
+  --foreground: #1A1A1A;
+  --primary: #EFE810;
+  --primary-hover: #d4cd00;
+  --accent-soft: #F5F2C8;
+  --bg-light: #F9F9F9;
+  --text-headline: #1A1A1A;
+  --text-body: #555555;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
   --color-accent-soft: var(--accent-soft);
-  --color-accent-warm: var(--accent-warm);
   --color-bg-light: var(--bg-light);
   --color-text-headline: var(--text-headline);
   --color-text-body: var(--text-body);
@@ -27,7 +27,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #FFFFFF;
-    --foreground: #4A4A4A;
+    --foreground: #1A1A1A;
   }
 }
 
@@ -39,9 +39,9 @@ body {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(76, 175, 80, 0.4), 0 0 40px rgba(76, 175, 80, 0.2);
+    box-shadow: 0 0 20px rgba(239, 232, 16, 0.4), 0 0 40px rgba(239, 232, 16, 0.2);
   }
   50% {
-    box-shadow: 0 0 30px rgba(76, 175, 80, 0.6), 0 0 60px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 0 30px rgba(239, 232, 16, 0.6), 0 0 60px rgba(239, 232, 16, 0.3);
   }
 }

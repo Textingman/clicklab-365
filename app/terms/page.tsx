@@ -5,35 +5,35 @@ export default function TermsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm">
+      <nav className="bg-white shadow-sm border-b border-[#E5E7EB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-32">
+          <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
                 <Image 
-                  src="/EDMVerify.png"
-                  alt="EDM Verify"
-                  width={500} 
-                  height={167}
-                  className="h-24 w-auto"
+                  src="/Vlogo.svg"
+                  alt="Volt"
+                  width={160}
+                  height={58}
+                  className="h-10 w-auto"
                 />
               </Link>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-[#6B7280] hover:text-[#2F6F66] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <Link href="/about" className="text-[#6B7280] hover:text-[#2F6F66] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/about" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
-                <Link href="/privacy" className="text-[#6B7280] hover:text-[#2F6F66] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/privacy" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   Privacy
                 </Link>
-                <Link href="/terms" className="text-[#1F2937] hover:text-[#2F6F66] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/terms" className="text-[#1A1A1A] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   Terms
                 </Link>
-                <Link href="/signup" className="bg-[#4CAF50] text-white hover:bg-[#45a049] px-4 py-2 rounded-md text-sm font-medium">
+                <Link href="/signup" className="bg-[#EFE810] text-[#1A1A1A] hover:bg-[#d4cd00] px-4 py-2 rounded-md text-sm font-semibold">
                   Get Started
                 </Link>
               </div>
@@ -43,7 +43,7 @@ export default function TermsPage() {
       </nav>
 
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#F9FAFB] to-white py-12">
+      <section className="bg-[#F9F9F9] py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Terms of Service</h1>
           <p className="text-lg text-gray-600">
@@ -58,12 +58,12 @@ export default function TermsPage() {
           
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="text-gray-600 mb-6">
-            By accessing or using EDM Verify's SMS verification service ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
+            By accessing or using Volt Verify's SMS verification service ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Description of Service</h2>
           <p className="text-gray-600 mb-6">
-            EDM Verify provides a carrier-compliant SMS verification platform that allows businesses to verify customer phone numbers through a secure, pass-through verification page. The Service includes:
+            Volt Verify provides a carrier-compliant SMS verification platform that allows businesses to verify customer phone numbers through a secure, pass-through verification page. The Service includes:
           </p>
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-2">
             <li>SMS verification landing pages</li>
@@ -142,7 +142,7 @@ export default function TermsPage() {
           
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">7.1 Our Rights</h3>
           <p className="text-gray-600 mb-6">
-            The Service and all content, features, and functionality are owned by EDM Verify and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
+            The Service and all content, features, and functionality are owned by Volt Verify and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">7.2 Your Content</h3>
@@ -174,7 +174,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Data and Privacy</h2>
           <p className="text-gray-600 mb-6">
-            Your use of the Service is also governed by our <Link href="/privacy" className="text-[#FB923C] hover:text-[#F97316] font-medium">Privacy Policy</Link>. By using the Service, you consent to our collection and use of information as described in the Privacy Policy.
+            Your use of the Service is also governed by our <Link href="/privacy" className="text-[#1A1A1A] hover:text-[#555555] font-medium underline">Privacy Policy</Link>. By using the Service, you consent to our collection and use of information as described in the Privacy Policy.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">10. Disclaimers and Limitations of Liability</h2>
@@ -186,7 +186,7 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">10.2 Limitation of Liability</h3>
           <p className="text-gray-600 mb-6">
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, BWO VERIFY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, VOLT VERIFY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">10.3 Maximum Liability</h3>
@@ -196,7 +196,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">11. Indemnification</h2>
           <p className="text-gray-600 mb-6">
-            You agree to indemnify, defend, and hold harmless EDM Verify and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
+            You agree to indemnify, defend, and hold harmless Volt Verify and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
           </p>
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-2">
             <li>Your use of the Service</li>
@@ -248,7 +248,7 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">14.2 Entire Agreement</h3>
           <p className="text-gray-600 mb-6">
-            These Terms, together with our Privacy Policy, constitute the entire agreement between you and EDM Verify regarding the Service and supersede all prior agreements.
+            These Terms, together with our Privacy Policy, constitute the entire agreement between you and Volt Verify regarding the Service and supersede all prior agreements.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">14.3 Severability</h3>
@@ -276,20 +276,26 @@ export default function TermsPage() {
             If you have any questions about these Terms, please contact us:
           </p>
           <div className="bg-gray-50 rounded-lg p-6 mb-8">
-            <p className="text-gray-600 mb-2"><strong>Email:</strong> <a href="mailto:legal@edmverify.com" className="text-[#2F6F66] hover:text-[#4CAF50]">legal@edmverify.com</a></p>
-            <p className="text-gray-600 mb-2"><strong>Support:</strong> <a href="mailto:support@edmverify.com" className="text-[#2F6F66] hover:text-[#4CAF50]">support@edmverify.com</a></p>
-            <p className="text-gray-600"><strong>Website:</strong> <a href="/" className="text-[#2F6F66] hover:text-[#4CAF50]">https://edmverify.com</a></p>
+            <p className="text-gray-600 mb-2"><strong>Email:</strong> <a href="mailto:legal@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">legal@voltverify.com</a></p>
+            <p className="text-gray-600 mb-2"><strong>Support:</strong> <a href="mailto:support@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">support@voltverify.com</a></p>
+            <p className="text-gray-600"><strong>Website:</strong> <a href="/" className="text-[#1A1A1A] hover:text-[#555555]">https://voltverify.com</a></p>
           </div>
 
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#3b3a41] text-white py-12 mt-20">
+      <footer className="bg-[#1A1A1A] text-white py-12 mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">EDM Verify</h3>
+              <Image
+                src="/Vlogo.svg"
+                alt="Volt"
+                width={120}
+                height={44}
+                className="h-8 w-auto mb-4 brightness-0 invert"
+              />
               <p className="text-gray-400">
                 Carrier-compliant SMS verification for businesses.
               </p>
@@ -327,12 +333,12 @@ export default function TermsPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                support@edmverify.com
+                support@voltverify.com
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 EDM Verify. All rights reserved.</p>
+            <p>&copy; 2025 Volt Verify. All rights reserved.</p>
           </div>
         </div>
       </footer>

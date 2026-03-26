@@ -3,7 +3,7 @@
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
-import { CheckCircle, Phone } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 function VerifyPageContent() {
   const searchParams = useSearchParams();
@@ -65,26 +65,26 @@ function VerifyPageContent() {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#F9FAFB] to-white flex items-center justify-center px-4 py-8">
-      <div className="max-w-xl w-full bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-1.5 before:bg-gradient-to-r before:from-[#4CAF50] before:to-[#45a049] before:rounded-t-2xl before:shadow-[0_8px_24px_rgba(76,175,80,0.6)]">
+    <div className="min-h-screen bg-[#F9F9F9] flex items-center justify-center px-4 py-8">
+      <div className="max-w-xl w-full bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-1.5 before:bg-[#EFE810] before:rounded-t-2xl">
         {/* Logo/Brand */}
         <div className="flex justify-center mb-6 sm:mb-8">
           <Image 
-            src="/EDMVerify.png"
-            alt="EDM Verify"
-            width={320} 
-            height={107}
-            className="h-16 sm:h-20 md:h-24 w-auto"
+            src="/Vlogo.svg"
+            alt="Volt"
+            width={160}
+            height={58}
+            className="h-10 sm:h-12 w-auto"
           />
         </div>
 
         {/* Verification Content */}
         <div className="text-center mb-8">
-          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle className="w-12 h-12 text-[#4CAF50]" />
+          <div className="w-20 h-20 bg-[#EFE810] rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle className="w-12 h-12 text-[#1A1A1A]" />
           </div>
           
-          <h2 className="text-xl sm:text-2xl font-bold text-[#1F2937] mb-6 px-2">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#1A1A1A] mb-6 px-2">
             Sorry we missed your call!
           </h2>
           
@@ -95,15 +95,15 @@ function VerifyPageContent() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               placeholder="Enter phone number"
-              className="w-full bg-gray-50 rounded-lg p-3 sm:p-4 text-lg sm:text-xl font-bold text-[#1F2937] tracking-wider text-center border-2 border-[#E5E7EB] focus:border-[#4CAF50] focus:outline-none transition-colors"
+              className="w-full bg-gray-50 rounded-lg p-3 sm:p-4 text-lg sm:text-xl font-bold text-[#1A1A1A] tracking-wider text-center border-2 border-[#E5E7EB] focus:border-[#EFE810] focus:outline-none transition-colors"
             />
           </div>
 
           {/* Progress/Urgency Indicator */}
           <div className="mb-6 text-center">
-            <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-[#6B7280]">
+            <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-[#555555]">
               <div className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-[#EFE810] rounded-full animate-pulse"></div>
                 <span>3 agents available now</span>
               </div>
             </div>
@@ -115,8 +115,8 @@ function VerifyPageContent() {
             disabled={isRedirecting}
             className={`w-full py-3 sm:py-4 px-4 sm:px-6 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 ${
               isRedirecting
-                ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-gradient-to-r from-[#4CAF50] to-[#45a049] hover:from-[#45a049] hover:to-[#4CAF50] text-white shadow-lg hover:shadow-2xl hover:scale-105 cursor-pointer'
+                ? 'bg-gray-400 cursor-not-allowed text-white'
+                : 'bg-[#EFE810] hover:bg-[#d4cd00] text-[#1A1A1A] shadow-lg hover:shadow-xl hover:scale-105 cursor-pointer'
             }`}
           >
             {isRedirecting ? (
@@ -131,13 +131,13 @@ function VerifyPageContent() {
               <span className="block sm:inline">Verify Number</span>
             )}
           </button>
-          <p className="text-xs sm:text-sm text-[#1F2937] mt-2 font-medium">✓ 12,400+ verified this week</p>
+          <p className="text-xs sm:text-sm text-[#1A1A1A] mt-2 font-medium">✓ 12,400+ verified this week</p>
         </div>
 
         {/* Footer */}
         <div className="text-center pt-6 border-t border-[#E5E7EB]">
-          <p className="text-xs text-[#6B7280]">
-            Secured by EDM Verify
+          <p className="text-xs text-[#555555]">
+            Secured by Volt Verify
           </p>
         </div>
       </div>
@@ -148,10 +148,10 @@ function VerifyPageContent() {
 export default function VerifyPage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen bg-gradient-to-b from-[#F9FAFB] to-white flex items-center justify-center">
+      <div className="min-h-screen bg-[#F9F9F9] flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#4CAF50] mx-auto"></div>
-          <p className="mt-4 text-[#6B7280]">Loading...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#EFE810] mx-auto"></div>
+          <p className="mt-4 text-[#555555]">Loading...</p>
         </div>
       </div>
     }>

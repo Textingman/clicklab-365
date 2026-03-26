@@ -5,35 +5,35 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm">
+      <nav className="bg-white shadow-sm border-b border-[#E5E7EB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-32">
+          <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
                 <Image 
-                  src="/EDMVerify.png"
-                  alt="EDM Verify"
-                  width={500} 
-                  height={167}
-                  className="h-24 w-auto"
+                  src="/Vlogo.svg"
+                  alt="Volt"
+                  width={160}
+                  height={58}
+                  className="h-10 w-auto"
                 />
               </Link>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-[#6B7280] hover:text-[#2F6F66] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <Link href="/about" className="text-[#6B7280] hover:text-[#2F6F66] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/about" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
-                <Link href="/privacy" className="text-[#1F2937] hover:text-[#2F6F66] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/privacy" className="text-[#1A1A1A] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   Privacy
                 </Link>
-                <Link href="/terms" className="text-[#6B7280] hover:text-[#2F6F66] px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="/terms" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   Terms
                 </Link>
-                <Link href="/signup" className="bg-[#4CAF50] text-white hover:bg-[#45a049] px-4 py-2 rounded-md text-sm font-medium">
+                <Link href="/signup" className="bg-[#EFE810] text-[#1A1A1A] hover:bg-[#d4cd00] px-4 py-2 rounded-md text-sm font-semibold">
                   Get Started
                 </Link>
               </div>
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
       </nav>
 
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#F9FAFB] to-white py-12">
+      <section className="bg-[#F9F9F9] py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Privacy Policy</h1>
           <p className="text-lg text-gray-600">
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
           
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Introduction</h2>
           <p className="text-gray-600 mb-6">
-            EDM Verify ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our SMS verification service and website.
+            Volt Verify ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our SMS verification service and website.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Information We Collect</h2>
@@ -156,7 +156,7 @@ export default function PrivacyPage() {
             <li><strong>Opt-out:</strong> Opt out of marketing communications</li>
           </ul>
           <p className="text-gray-600 mb-6">
-            To exercise these rights, please contact us at <a href="mailto:privacy@edmverify.com" className="text-[#2F6F66] hover:text-[#4CAF50]">privacy@edmverify.com</a>.
+            To exercise these rights, please contact us at <a href="mailto:privacy@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">privacy@voltverify.com</a>.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Cookies and Tracking Technologies</h2>
@@ -194,20 +194,26 @@ export default function PrivacyPage() {
             If you have any questions about this Privacy Policy or our privacy practices, please contact us:
           </p>
           <div className="bg-gray-50 rounded-lg p-6 mb-8">
-            <p className="text-gray-600 mb-2"><strong>Email:</strong> <a href="mailto:privacy@edmverify.com" className="text-[#2F6F66] hover:text-[#4CAF50]">privacy@edmverify.com</a></p>
-            <p className="text-gray-600 mb-2"><strong>Support:</strong> <a href="mailto:support@edmverify.com" className="text-[#2F6F66] hover:text-[#4CAF50]">support@edmverify.com</a></p>
-            <p className="text-gray-600"><strong>Website:</strong> <a href="/" className="text-[#2F6F66] hover:text-[#4CAF50]">https://edmverify.com</a></p>
+            <p className="text-gray-600 mb-2"><strong>Email:</strong> <a href="mailto:privacy@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">privacy@voltverify.com</a></p>
+            <p className="text-gray-600 mb-2"><strong>Support:</strong> <a href="mailto:support@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">support@voltverify.com</a></p>
+            <p className="text-gray-600"><strong>Website:</strong> <a href="/" className="text-[#1A1A1A] hover:text-[#555555]">https://voltverify.com</a></p>
           </div>
 
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#3b3a41] text-white py-12 mt-20">
+      <footer className="bg-[#1A1A1A] text-white py-12 mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">EDM Verify</h3>
+              <Image
+                src="/Vlogo.svg"
+                alt="Volt"
+                width={120}
+                height={44}
+                className="h-8 w-auto mb-4 brightness-0 invert"
+              />
               <p className="text-gray-400">
                 Carrier-compliant SMS verification for businesses.
               </p>
@@ -245,12 +251,12 @@ export default function PrivacyPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                support@edmverify.com
+                support@voltverify.com
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 EDM Verify. All rights reserved.</p>
+            <p>&copy; 2025 Volt Verify. All rights reserved.</p>
           </div>
         </div>
       </footer>
