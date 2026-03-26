@@ -106,7 +106,7 @@ function VerifyPageContent() {
             className={`w-full py-3 sm:py-4 px-4 sm:px-6 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 ${
               isRedirecting
                 ? 'bg-gray-400 cursor-not-allowed text-white'
-                : 'bg-[#EFE810] hover:bg-[#d4cd00] text-[#1A1A1A] shadow-lg hover:shadow-xl hover:scale-105 cursor-pointer'
+                : 'bg-[#EFE810] text-[#1A1A1A] shadow-lg cursor-pointer'
             }`}
           >
             {isRedirecting ? (
