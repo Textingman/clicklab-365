@@ -169,7 +169,7 @@ export default function HomePage() {
             {/* Single Image */}
             <div className="rounded-lg overflow-hidden sticky top-8 flex items-start justify-center">
               <Image 
-                src="/Phone.png" 
+                src="/phonevolt.png"
                 alt="Volt Verify Solutions"
                 width={350} 
                 height={350}
