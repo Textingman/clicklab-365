@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function PrivacyPage() {
   return (
@@ -10,13 +9,7 @@ export default function PrivacyPage() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <Image 
-                  src="/Vlogo.svg"
-                  alt="Volt"
-                  width={160}
-                  height={58}
-                  className="h-10 w-auto"
-                />
+                <span className="text-3xl font-extrabold text-[#1A1A1A] tracking-tight">loyalty</span>
               </Link>
             </div>
             <div className="hidden md:block">
@@ -47,7 +40,7 @@ export default function PrivacyPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Privacy Policy</h1>
           <p className="text-lg text-gray-600">
-            Last Updated: December 30, 2025
+            Last Updated: March 27, 2026
           </p>
         </div>
       </section>
@@ -58,7 +51,7 @@ export default function PrivacyPage() {
           
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Introduction</h2>
           <p className="text-gray-600 mb-6">
-            Volt Verify ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our SMS verification service and website.
+            Loyalty ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our loyalty tracking platform and website at loyalty.com.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Information We Collect</h2>
@@ -72,33 +65,37 @@ export default function PrivacyPage() {
             <li>Payment information (processed by third-party payment processors)</li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2.2 Information Collected Automatically</h3>
-          <p className="text-gray-600 mb-4">When you use our verification service, we automatically collect:</p>
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2.2 Customer Loyalty Data</h3>
+          <p className="text-gray-600 mb-4">When you use our loyalty tracking platform, we collect data to power your loyalty program, including:</p>
+          <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-2">
+            <li>Customer purchase history and transaction data</li>
+            <li>Points balances and redemption history</li>
+            <li>Engagement metrics (visits, referrals, reviews)</li>
+            <li>Customer tier and segment information</li>
+          </ul>
+
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2.3 Information Collected Automatically</h3>
+          <p className="text-gray-600 mb-4">When you use our platform, we automatically collect:</p>
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-2">
             <li>Device information (browser type, operating system)</li>
             <li>IP address and location data</li>
             <li>Usage data (pages visited, time spent, click patterns)</li>
-            <li>Verification timestamps and success/failure rates</li>
+            <li>Platform performance and analytics data</li>
           </ul>
-
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2.3 Phone Number Handling</h3>
-          <p className="text-gray-600 mb-6">
-            <strong>Important:</strong> We do NOT store phone numbers used in the verification process. Phone numbers are only displayed (masked) during the verification flow and are not logged or retained in our systems. All tracking parameters are passed through without storing personal identifiable information.
-          </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2.4 Mobile Information Sharing</h3>
           <p className="text-gray-600 mb-6">
-            <strong>No mobile information will be shared or sold to third parties for marketing purposes.</strong> We are committed to protecting your mobile information and will only use it for the purposes outlined in this Privacy Policy, such as providing our verification service and communicating with you about your account.
+            <strong>No mobile information will be shared or sold to third parties for marketing purposes.</strong> We are committed to protecting your mobile information and will only use it for the purposes outlined in this Privacy Policy, such as providing our loyalty platform and communicating with you about your account.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. How We Use Your Information</h2>
           <p className="text-gray-600 mb-4">We use the information we collect to:</p>
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-2">
-            <li>Provide and maintain our verification service</li>
+            <li>Provide and maintain our loyalty tracking platform</li>
+            <li>Power your loyalty programs, points tracking, and rewards</li>
             <li>Process your transactions and manage your account</li>
-            <li>Send you service-related communications</li>
-            <li>Improve our service and develop new features</li>
-            <li>Ensure compliance with carrier requirements and regulations</li>
+            <li>Send you service-related communications and program updates</li>
+            <li>Generate analytics and insights to improve your loyalty program performance</li>
             <li>Detect and prevent fraud or abuse</li>
             <li>Comply with legal obligations</li>
           </ul>
@@ -136,9 +133,6 @@ export default function PrivacyPage() {
             <li>Access controls and authentication mechanisms</li>
             <li>Regular security assessments and updates</li>
           </ul>
-          <p className="text-gray-600 mb-6">
-            However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.
-          </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Data Retention</h2>
           <p className="text-gray-600 mb-6">
@@ -156,47 +150,42 @@ export default function PrivacyPage() {
             <li><strong>Opt-out:</strong> Opt out of marketing communications</li>
           </ul>
           <p className="text-gray-600 mb-6">
-            To exercise these rights, please contact us at <a href="mailto:privacy@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">privacy@voltverify.com</a>.
+            To exercise these rights, please contact us at <a href="mailto:privacy@loyalty.com" className="text-[#1A1A1A] hover:text-[#555555]">privacy@loyalty.com</a>.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Cookies and Tracking Technologies</h2>
           <p className="text-gray-600 mb-6">
-            We use cookies and similar tracking technologies to track activity on our service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our service.
+            We use cookies and similar tracking technologies to track activity on our platform and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our service.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Third-Party Links</h2>
           <p className="text-gray-600 mb-6">
-            Our service may contain links to third-party websites. We are not responsible for the privacy practices of these external sites. We encourage you to review the privacy policies of any third-party sites you visit.
+            Our platform may contain links to third-party websites. We are not responsible for the privacy practices of these external sites. We encourage you to review the privacy policies of any third-party sites you visit.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">10. Children's Privacy</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">10. Children&apos;s Privacy</h2>
           <p className="text-gray-600 mb-6">
             Our service is not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">11. International Data Transfers</h2>
-          <p className="text-gray-600 mb-6">
-            Your information may be transferred to and processed in countries other than your country of residence. These countries may have data protection laws that differ from those in your country. We take appropriate safeguards to ensure your information remains protected in accordance with this Privacy Policy.
-          </p>
-
-          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">12. California Privacy Rights</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">11. California Privacy Rights</h2>
           <p className="text-gray-600 mb-6">
             If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect, the right to delete your information, and the right to opt-out of the sale of your personal information. We do not sell personal information.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">13. Changes to This Privacy Policy</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">12. Changes to This Privacy Policy</h2>
           <p className="text-gray-600 mb-6">
-            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
+            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date. You are advised to review this Privacy Policy periodically for any changes.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">14. Contact Us</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">13. Contact Us</h2>
           <p className="text-gray-600 mb-4">
             If you have any questions about this Privacy Policy or our privacy practices, please contact us:
           </p>
           <div className="bg-gray-50 rounded-lg p-6 mb-8">
-            <p className="text-gray-600 mb-2"><strong>Email:</strong> <a href="mailto:privacy@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">privacy@voltverify.com</a></p>
-            <p className="text-gray-600 mb-2"><strong>Support:</strong> <a href="mailto:support@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">support@voltverify.com</a></p>
-            <p className="text-gray-600"><strong>Website:</strong> <a href="/" className="text-[#1A1A1A] hover:text-[#555555]">https://voltverify.com</a></p>
+            <p className="text-gray-600 mb-2"><strong>Email:</strong> <a href="mailto:privacy@loyalty.com" className="text-[#1A1A1A] hover:text-[#555555]">privacy@loyalty.com</a></p>
+            <p className="text-gray-600 mb-2"><strong>Support:</strong> <a href="mailto:support@loyalty.com" className="text-[#1A1A1A] hover:text-[#555555]">support@loyalty.com</a></p>
+            <p className="text-gray-600"><strong>Website:</strong> <a href="/" className="text-[#1A1A1A] hover:text-[#555555]">https://loyalty.com</a></p>
           </div>
 
         </div>
@@ -207,15 +196,9 @@ export default function PrivacyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <Image
-                src="/Vlogo.svg"
-                alt="Volt"
-                width={120}
-                height={44}
-                className="h-8 w-auto mb-4 brightness-0 invert"
-              />
-              <p className="text-gray-400">
-                Carrier-compliant SMS verification for businesses.
+              <span className="text-2xl font-extrabold text-white tracking-tight">loyalty</span>
+              <p className="text-gray-400 mt-3">
+                Loyalty tracking software that drives real engagement.
               </p>
             </div>
             <div>
@@ -251,12 +234,12 @@ export default function PrivacyPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                support@voltverify.com
+                support@loyalty.com
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Volt Verify. All rights reserved.</p>
+            <p>&copy; 2026 Loyalty. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function TermsPage() {
   return (
@@ -10,13 +9,7 @@ export default function TermsPage() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <Image 
-                  src="/Vlogo.svg"
-                  alt="Volt"
-                  width={160}
-                  height={58}
-                  className="h-10 w-auto"
-                />
+                <span className="text-3xl font-extrabold text-[#1A1A1A] tracking-tight">loyalty</span>
               </Link>
             </div>
             <div className="hidden md:block">
@@ -47,7 +40,7 @@ export default function TermsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Terms of Service</h1>
           <p className="text-lg text-gray-600">
-            Last Updated: December 30, 2025
+            Last Updated: March 27, 2026
           </p>
         </div>
       </section>
@@ -58,19 +51,20 @@ export default function TermsPage() {
           
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="text-gray-600 mb-6">
-            By accessing or using Volt Verify's SMS verification service ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
+            By accessing or using Loyalty&apos;s loyalty tracking platform ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Description of Service</h2>
           <p className="text-gray-600 mb-6">
-            Volt Verify provides a carrier-compliant SMS verification platform that allows businesses to verify customer phone numbers through a secure, pass-through verification page. The Service includes:
+            Loyalty provides a customer engagement and loyalty tracking platform that allows businesses to create, manage, and optimize loyalty programs. The Service includes:
           </p>
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-2">
-            <li>SMS verification landing pages</li>
-            <li>Phone number verification flow</li>
-            <li>Parameter preservation and redirect functionality</li>
-            <li>Multi-brand support with customizable styling</li>
-            <li>Carrier-compliant infrastructure</li>
+            <li>Points and rewards program management</li>
+            <li>Customer tier and segmentation tools</li>
+            <li>Real-time analytics and engagement dashboards</li>
+            <li>Referral and re-engagement campaign tools</li>
+            <li>Multi-brand and multi-location support</li>
+            <li>Integration capabilities with POS, e-commerce, and CRM systems</li>
           </ul>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Account Registration and Security</h2>
@@ -101,24 +95,24 @@ export default function TermsPage() {
             <li>Impersonate any person or entity or misrepresent your affiliation</li>
             <li>Collect or harvest personal information without consent</li>
             <li>Use the Service for any illegal or unauthorized purpose</li>
-            <li>Violate carrier regulations or 10DLC compliance requirements</li>
+            <li>Manipulate loyalty points or rewards in a fraudulent manner</li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Compliance with Carrier Requirements</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Loyalty Program Rules</h2>
           
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5.1 10DLC Compliance</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5.1 Program Configuration</h3>
           <p className="text-gray-600 mb-6">
-            You agree to comply with all applicable carrier requirements, including 10DLC (10-Digit Long Code) regulations. You are responsible for obtaining proper consent from end users before sending SMS messages and maintaining records of such consent.
+            You are responsible for configuring your loyalty program in compliance with all applicable laws and regulations. You must clearly communicate your program&apos;s terms, earning rules, and redemption policies to your customers.
           </p>
 
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5.2 Opt-In Requirements</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5.2 Customer Consent</h3>
           <p className="text-gray-600 mb-6">
-            You must obtain explicit opt-in consent from end users before sending them SMS messages through our Service. You must provide clear opt-out mechanisms and honor opt-out requests promptly.
+            You must obtain appropriate consent from your customers before enrolling them in your loyalty program and before sending them any communications related to the program.
           </p>
 
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5.3 Content Restrictions</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5.3 Rewards Fulfillment</h3>
           <p className="text-gray-600 mb-6">
-            You agree not to send messages containing prohibited content, including but not limited to: illegal content, adult content, gambling, cannabis, firearms, or any content that violates carrier guidelines.
+            You are solely responsible for fulfilling any rewards, discounts, or benefits promised to your customers through your loyalty program. Loyalty is not responsible for any rewards or benefits offered through your program.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Fees and Payment</h2>
@@ -142,17 +136,12 @@ export default function TermsPage() {
           
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">7.1 Our Rights</h3>
           <p className="text-gray-600 mb-6">
-            The Service and all content, features, and functionality are owned by Volt Verify and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
+            The Service and all content, features, and functionality are owned by Loyalty and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">7.2 Your Content</h3>
           <p className="text-gray-600 mb-6">
             You retain ownership of any content you submit through the Service. By submitting content, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, and display such content solely for the purpose of providing the Service.
-          </p>
-
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">7.3 Feedback</h3>
-          <p className="text-gray-600 mb-6">
-            If you provide us with feedback or suggestions about the Service, we may use such feedback without any obligation to you.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Service Availability and Support</h2>
@@ -167,11 +156,6 @@ export default function TermsPage() {
             We provide email support during business hours. Response times may vary based on your service plan and the nature of your inquiry.
           </p>
 
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">8.3 Service Modifications</h3>
-          <p className="text-gray-600 mb-6">
-            We reserve the right to modify, suspend, or discontinue any aspect of the Service at any time with reasonable notice. We will not be liable for any modification, suspension, or discontinuation of the Service.
-          </p>
-
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Data and Privacy</h2>
           <p className="text-gray-600 mb-6">
             Your use of the Service is also governed by our <Link href="/privacy" className="text-[#1A1A1A] hover:text-[#555555] font-medium underline">Privacy Policy</Link>. By using the Service, you consent to our collection and use of information as described in the Privacy Policy.
@@ -179,14 +163,14 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">10. Disclaimers and Limitations of Liability</h2>
           
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">10.1 Service "As Is"</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">10.1 Service &quot;As Is&quot;</h3>
           <p className="text-gray-600 mb-6">
-            THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+            THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">10.2 Limitation of Liability</h3>
           <p className="text-gray-600 mb-6">
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, VOLT VERIFY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, LOYALTY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">10.3 Maximum Liability</h3>
@@ -196,13 +180,14 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">11. Indemnification</h2>
           <p className="text-gray-600 mb-6">
-            You agree to indemnify, defend, and hold harmless Volt Verify and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
+            You agree to indemnify, defend, and hold harmless Loyalty and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
           </p>
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-2">
             <li>Your use of the Service</li>
             <li>Your violation of these Terms</li>
             <li>Your violation of any rights of another party</li>
             <li>Your violation of applicable laws or regulations</li>
+            <li>Your loyalty program and any rewards or benefits you offer to customers</li>
           </ul>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">12. Termination</h2>
@@ -215,11 +200,6 @@ export default function TermsPage() {
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">12.2 Termination by Us</h3>
           <p className="text-gray-600 mb-6">
             We may suspend or terminate your access to the Service at any time, with or without cause, with or without notice. Reasons for termination may include violation of these Terms, non-payment, or any conduct that we believe is harmful to other users or the Service.
-          </p>
-
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">12.3 Effect of Termination</h3>
-          <p className="text-gray-600 mb-6">
-            Upon termination, all licenses and rights granted to you will immediately cease. Provisions that by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, and limitations of liability.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">13. Dispute Resolution</h2>
@@ -248,7 +228,7 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">14.2 Entire Agreement</h3>
           <p className="text-gray-600 mb-6">
-            These Terms, together with our Privacy Policy, constitute the entire agreement between you and Volt Verify regarding the Service and supersede all prior agreements.
+            These Terms, together with our Privacy Policy, constitute the entire agreement between you and Loyalty regarding the Service and supersede all prior agreements.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">14.3 Severability</h3>
@@ -256,19 +236,9 @@ export default function TermsPage() {
             If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.
           </p>
 
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">14.4 Waiver</h3>
-          <p className="text-gray-600 mb-6">
-            Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
-          </p>
-
-          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">14.5 Assignment</h3>
-          <p className="text-gray-600 mb-6">
-            You may not assign or transfer these Terms or your rights under these Terms without our prior written consent. We may assign these Terms without restriction.
-          </p>
-
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">15. Changes to Terms</h2>
           <p className="text-gray-600 mb-6">
-            We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms on our website and updating the "Last Updated" date. Your continued use of the Service after changes become effective constitutes acceptance of the modified Terms.
+            We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms on our website and updating the &quot;Last Updated&quot; date. Your continued use of the Service after changes become effective constitutes acceptance of the modified Terms.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">16. Contact Information</h2>
@@ -276,9 +246,9 @@ export default function TermsPage() {
             If you have any questions about these Terms, please contact us:
           </p>
           <div className="bg-gray-50 rounded-lg p-6 mb-8">
-            <p className="text-gray-600 mb-2"><strong>Email:</strong> <a href="mailto:legal@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">legal@voltverify.com</a></p>
-            <p className="text-gray-600 mb-2"><strong>Support:</strong> <a href="mailto:support@voltverify.com" className="text-[#1A1A1A] hover:text-[#555555]">support@voltverify.com</a></p>
-            <p className="text-gray-600"><strong>Website:</strong> <a href="/" className="text-[#1A1A1A] hover:text-[#555555]">https://voltverify.com</a></p>
+            <p className="text-gray-600 mb-2"><strong>Email:</strong> <a href="mailto:legal@loyalty.com" className="text-[#1A1A1A] hover:text-[#555555]">legal@loyalty.com</a></p>
+            <p className="text-gray-600 mb-2"><strong>Support:</strong> <a href="mailto:support@loyalty.com" className="text-[#1A1A1A] hover:text-[#555555]">support@loyalty.com</a></p>
+            <p className="text-gray-600"><strong>Website:</strong> <a href="/" className="text-[#1A1A1A] hover:text-[#555555]">https://loyalty.com</a></p>
           </div>
 
         </div>
@@ -289,15 +259,9 @@ export default function TermsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <Image
-                src="/Vlogo.svg"
-                alt="Volt"
-                width={120}
-                height={44}
-                className="h-8 w-auto mb-4 brightness-0 invert"
-              />
-              <p className="text-gray-400">
-                Carrier-compliant SMS verification for businesses.
+              <span className="text-2xl font-extrabold text-white tracking-tight">loyalty</span>
+              <p className="text-gray-400 mt-3">
+                Loyalty tracking software that drives real engagement.
               </p>
             </div>
             <div>
@@ -333,12 +297,12 @@ export default function TermsPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                support@voltverify.com
+                support@loyalty.com
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Volt Verify. All rights reserved.</p>
+            <p>&copy; 2026 Loyalty. All rights reserved.</p>
           </div>
         </div>
       </footer>

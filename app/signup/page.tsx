@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 import { Mail, Building, Phone, User } from 'lucide-react';
 
@@ -21,8 +20,6 @@ export default function SignupPage() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // TODO: Integrate with Web3Forms later
-    // For now, just simulate submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus('success');
@@ -45,13 +42,7 @@ export default function SignupPage() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <Image
-                  src="/Vlogo.svg"
-                  alt="Volt"
-                  width={160}
-                  height={58}
-                  className="h-10 w-auto"
-                />
+                <span className="text-3xl font-extrabold text-[#1A1A1A] tracking-tight">loyalty</span>
               </Link>
             </div>
             <div className="hidden md:block">
@@ -82,10 +73,10 @@ export default function SignupPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold text-[#1A1A1A] mb-4">
-              Get Started with Volt Verify
+              Start Building Customer Loyalty
             </h1>
             <p className="text-xl text-[#555555] max-w-2xl mx-auto">
-              Fill out the form below and we&apos;ll get back to you within 24 hours to set up your account.
+              Fill out the form below and we&apos;ll get back to you within 24 hours to set up your loyalty program.
             </p>
           </div>
         </div>
@@ -101,9 +92,9 @@ export default function SignupPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h2 className="text-3xl font-bold text-[#1A1A1A] mb-4">Thank You!</h2>
+              <h2 className="text-3xl font-bold text-[#1A1A1A] mb-4">You&apos;re In!</h2>
               <p className="text-lg text-[#555555] mb-8">
-                We&apos;ve received your request. Our team will contact you within 24 hours to get you started.
+                We&apos;ve received your request. Our team will contact you within 24 hours to get your loyalty program up and running.
               </p>
               <Link
                 href="/"
@@ -115,9 +106,9 @@ export default function SignupPage() {
           ) : (
             <>
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2">Sign Up for Volt Verify</h2>
+                <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2">Get Started with Loyalty</h2>
                 <p className="text-[#555555]">
-                  Complete the form below to start verifying your customers with confidence.
+                  Tell us about your business and we&apos;ll build the perfect loyalty program for you.
                 </p>
               </div>
 
@@ -212,7 +203,7 @@ export default function SignupPage() {
                 {/* Message Field */}
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-[#1A1A1A] mb-2">
-                    Tell us about your use case (Optional)
+                    Tell us about your business (Optional)
                   </label>
                   <textarea
                     id="message"
@@ -221,52 +212,22 @@ export default function SignupPage() {
                     value={formData.message}
                     onChange={handleChange}
                     className="block w-full px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EFE810] focus:border-transparent"
-                    placeholder="How do you plan to use Volt Verify?"
+                    placeholder="What type of business do you run? How many customers do you have? What loyalty goals are you trying to achieve?"
                   />
                 </div>
 
                 {/* Consent Checkboxes */}
                 <div className="space-y-4">
-                  {/* SMS Consent Checkbox */}
-                  <div className="bg-[#1A1A1A] text-white rounded-lg p-6">
-                    <div className="flex items-start">
-                      <input
-                        type="checkbox"
-                        id="sms-consent"
-                        className="mt-1 h-4 w-4 text-[#EFE810] focus:ring-[#EFE810] border-gray-300 rounded flex-shrink-0"
-                      />
-                      <label htmlFor="sms-consent" className="ml-3 text-sm leading-relaxed">
-                        By checking this box, you provide consent to receive automated customer care SMS messages from Volt Verify. Message frequency varies and message and data rates may apply. You may opt-out by replying &apos;STOP&apos;. Reply &apos;HELP&apos; for help or email support@voltverify.com. Consent is not required as a condition of purchasing any products or services.
-                      </label>
-                    </div>
-                  </div>
-
-                  {/* Call Consent Checkbox */}
-                  <div className="bg-[#1A1A1A] text-white rounded-lg p-6">
-                    <div className="flex items-start">
-                      <input
-                        type="checkbox"
-                        id="call-consent"
-                        className="mt-1 h-4 w-4 text-[#EFE810] focus:ring-[#EFE810] border-gray-300 rounded flex-shrink-0"
-                      />
-                      <label htmlFor="call-consent" className="ml-3 text-sm leading-relaxed">
-                        By checking this box, you provide consent to receive automated customer care calls from Volt Verify. Call frequency varies and standard phone rates may apply. You may opt-out at any time by contacting support@voltverify.com. Consent is not required as a condition of purchasing any products or services.
-                      </label>
-                    </div>
-                  </div>
-
-                  {/* Account Notifications Opt-in Checkbox */}
+                  {/* SMS Opt-in Checkbox */}
                   <div className="bg-gray-50 border border-gray-300 rounded-lg p-6">
                     <div className="flex items-start">
                       <input
                         type="checkbox"
-                        id="account-notifications"
-                        checked={accountNotifications}
-                        onChange={(e) => setAccountNotifications(e.target.checked)}
+                        id="sms-optin"
                         className="mt-1 h-4 w-4 text-[#EFE810] focus:ring-[#EFE810] border-gray-300 rounded flex-shrink-0"
                       />
-                      <label htmlFor="account-notifications" className="ml-3 text-sm leading-relaxed text-[#555555]">
-                        By checking this box, you consent to receive account notifications, service updates, and important information about your Volt Verify account via SMS. Message frequency varies. You may opt-out at any time by contacting support@voltverify.com or by following the unsubscribe instructions in our communications. Consent is not required as a condition of purchasing any products or services.
+                      <label htmlFor="sms-optin" className="ml-3 text-sm leading-relaxed text-[#555555]">
+                        By checking this box and submitting this form, you agree to receive transactional account notification text messages from AI Benefits Agent. I understand I may opt out of SMS communication by replying &apos;STOP&apos;. Reply HELP or email support@aibenefitsagent.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by AI Benefits Agent.
                       </label>
                     </div>
                   </div>
@@ -313,13 +274,9 @@ export default function SignupPage() {
                       Submitting...
                     </span>
                   ) : (
-                    'Get Started'
+                    'Launch My Loyalty Program'
                   )}
                 </button>
-
-                <p className="text-center text-sm text-gray-500">
-                  Note: Web3Forms integration will be added in a future update.
-                </p>
               </form>
             </>
           )}
@@ -331,15 +288,9 @@ export default function SignupPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <Image
-                src="/Vlogo.svg"
-                alt="Volt"
-                width={120}
-                height={44}
-                className="h-8 w-auto mb-4 brightness-0 invert"
-              />
-              <p className="text-gray-400">
-                Carrier-compliant SMS verification for businesses.
+              <span className="text-2xl font-extrabold text-white tracking-tight">loyalty</span>
+              <p className="text-gray-400 mt-3">
+                Loyalty tracking software that drives real engagement.
               </p>
             </div>
             <div>
@@ -375,12 +326,12 @@ export default function SignupPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                support@voltverify.com
+                support@loyalty.com
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Volt Verify. All rights reserved.</p>
+            <p>&copy; 2026 Loyalty. All rights reserved.</p>
           </div>
         </div>
       </footer>

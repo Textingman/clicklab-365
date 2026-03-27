@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import { Shield, Target, Users, Zap } from 'lucide-react';
+import { Shield, Target, Users, TrendingUp, Gift, BarChart3 } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -11,13 +10,7 @@ export default function AboutPage() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <Image
-                  src="/Vlogo.svg"
-                  alt="Volt"
-                  width={160}
-                  height={58}
-                  className="h-10 w-auto"
-                />
+                <span className="text-3xl font-extrabold text-[#1A1A1A] tracking-tight">loyalty</span>
               </Link>
             </div>
             <div className="hidden md:block">
@@ -48,10 +41,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl font-extrabold text-[#1A1A1A] mb-6">
-              About Volt Verify
+              About Loyalty
             </h1>
             <p className="text-xl text-[#555555] max-w-3xl mx-auto">
-              We&apos;re building the future of SMS verification, helping businesses verify customer identity while improving delivery rates.
+              We&apos;re building the future of customer engagement — helping businesses of all sizes create loyalty programs that actually work, drive repeat revenue, and turn customers into advocates.
             </p>
           </div>
         </div>
@@ -63,13 +56,13 @@ export default function AboutPage() {
           <div>
             <h2 className="text-4xl font-bold text-[#1A1A1A] mb-6">Our Mission</h2>
             <p className="text-lg text-[#555555] mb-4">
-              Volt Verify was created to solve a critical problem: businesses need a reliable way to verify customer identity via SMS while maintaining high delivery rates.
+              Loyalty was built to solve a fundamental business problem: acquiring a new customer costs 5–7x more than retaining an existing one, yet most businesses invest almost nothing in keeping customers coming back.
             </p>
             <p className="text-lg text-[#555555] mb-4">
-              We provide a simple, secure verification platform that acts as a trusted intermediary between businesses and their customers.
+              We provide a simple, powerful loyalty tracking platform that makes it easy to reward engagement, understand customer behavior, and build lasting relationships that drive real revenue growth.
             </p>
             <p className="text-lg text-[#555555]">
-              Our goal is to make SMS verification seamless, secure, and accessible for businesses of all sizes.
+              Our goal is to make enterprise-grade loyalty programs accessible to every business — from local shops to national brands.
             </p>
           </div>
           <div className="bg-[#F9F9F9] rounded-2xl p-8 border border-[#E5E7EB]">
@@ -81,9 +74,9 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Focused on Quality</h3>
+                  <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Results-Driven</h3>
                   <p className="text-[#555555]">
-                    Built from the ground up to meet industry standards and best practices.
+                    Every feature is built to drive measurable outcomes — repeat visits, higher spend, and lower churn.
                   </p>
                 </div>
               </div>
@@ -94,22 +87,22 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Security First</h3>
+                  <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Privacy First</h3>
                   <p className="text-[#555555]">
-                    Your customers&apos; data is protected with enterprise-grade security measures.
+                    Your customers&apos; data is protected with enterprise-grade security. We never sell customer data.
                   </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 bg-[#EFE810] rounded-full flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-[#1A1A1A]" />
+                    <TrendingUp className="w-6 h-6 text-[#1A1A1A]" />
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Lightning Fast</h3>
+                  <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Built to Scale</h3>
                   <p className="text-[#555555]">
-                    Optimized for speed with sub-2-second page loads on mobile networks.
+                    Start with a simple points program and grow into advanced tiers, segmentation, and automation.
                   </p>
                 </div>
               </div>
@@ -122,20 +115,30 @@ export default function AboutPage() {
       <section className="bg-[#F9F9F9] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#1A1A1A] mb-4">Why Businesses Choose Us</h2>
+            <h2 className="text-4xl font-bold text-[#1A1A1A] mb-4">Why Businesses Choose Loyalty</h2>
             <p className="text-xl text-[#555555]">
-              Trusted by companies that value compliance, security, and reliability
+              Trusted by businesses that understand the value of keeping customers coming back
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="bg-[#EFE810] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-[#1A1A1A]" />
+                <Gift className="w-8 h-8 text-[#1A1A1A]" />
               </div>
-              <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Reliable Service</h3>
+              <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Flexible Rewards</h3>
               <p className="text-[#555555]">
-                Built with industry best practices for maximum reliability.
+                Points, tiers, cashback, free items — build the program that fits your business model.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-[#EFE810] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BarChart3 className="w-8 h-8 text-[#1A1A1A]" />
+              </div>
+              <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Deep Analytics</h3>
+              <p className="text-[#555555]">
+                Understand exactly which rewards drive the most engagement and revenue.
               </p>
             </div>
 
@@ -145,17 +148,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Multi-Brand Support</h3>
               <p className="text-[#555555]">
-                Support multiple brands with customizable styling options.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-[#EFE810] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-8 h-8 text-[#1A1A1A]" />
-              </div>
-              <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">High Performance</h3>
-              <p className="text-[#555555]">
-                Global CDN ensures fast load times worldwide.
+                Run loyalty programs across multiple locations or brands from a single dashboard.
               </p>
             </div>
 
@@ -165,7 +158,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Easy Integration</h3>
               <p className="text-[#555555]">
-                Simple URL-based integration with comprehensive documentation.
+                Connect with your existing POS, e-commerce, or CRM system in minutes.
               </p>
             </div>
           </div>
@@ -176,16 +169,16 @@ export default function AboutPage() {
       <section className="bg-[#1A1A1A] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to Get Started?
+            Ready to Build Real Loyalty?
           </h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Join businesses that trust Volt Verify for SMS verification.
+            Join thousands of businesses using Loyalty to drive repeat revenue and deeper customer relationships.
           </p>
           <Link
             href="/signup"
             className="inline-block px-8 py-4 bg-[#EFE810] text-[#1A1A1A] text-lg font-semibold rounded-lg hover:bg-[#d4cd00] transition-colors shadow-lg"
           >
-            Get Started Today
+            Get Started Free
           </Link>
         </div>
       </section>
@@ -195,15 +188,9 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <Image
-                src="/Vlogo.svg"
-                alt="Volt"
-                width={120}
-                height={44}
-                className="h-8 w-auto mb-4 brightness-0 invert"
-              />
-              <p className="text-gray-400">
-                SMS verification for businesses.
+              <span className="text-2xl font-extrabold text-white tracking-tight">loyalty</span>
+              <p className="text-gray-400 mt-3">
+                Loyalty tracking software that drives real engagement.
               </p>
             </div>
             <div>
@@ -239,12 +226,12 @@ export default function AboutPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                support@voltverify.com
+                support@loyalty.com
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Volt Verify. All rights reserved.</p>
+            <p>&copy; 2026 Loyalty. All rights reserved.</p>
           </div>
         </div>
       </footer>

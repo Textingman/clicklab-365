@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Volt Verify",
-  description: "SMS verification for businesses",
+  title: "Loyalty",
+  description: "Drive customer engagement with loyalty tracking software",
 };
 
 export default function RootLayout({
