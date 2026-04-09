@@ -3,10 +3,13 @@
 :root {
   --background: #FFFFFF;
   --foreground: #1A1A1A;
-  --primary: #EFE810;
-  --primary-hover: #d4cd00;
-  --accent-soft: #F5F2C8;
-  --bg-light: #F9F9F9;
+  --primary: #F97316;
+  --primary-hover: #ea6c0a;
+  --primary-dark: #DC2626;
+  --primary-gradient-start: #F59E0B;
+  --primary-gradient-end: #DC2626;
+  --accent-soft: #FEF3C7;
+  --bg-light: #FFF7ED;
   --text-headline: #1A1A1A;
   --text-body: #555555;
 }
@@ -16,6 +19,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-hover: var(--primary-hover);
+  --color-primary-dark: var(--primary-dark);
   --color-accent-soft: var(--accent-soft);
   --color-bg-light: var(--bg-light);
   --color-text-headline: var(--text-headline);

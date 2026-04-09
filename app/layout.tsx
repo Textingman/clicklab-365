@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Loyalty",
-  description: "Drive customer engagement with loyalty tracking software",
+  title: "365 — Transactional Messaging Platform | getnotifications365.com",
+  description: "Send SMS, Email, and Push notifications to your customers with guaranteed deliverability. Visit getnotifications365.com.",
 };
 
 export default function RootLayout({
