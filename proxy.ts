@@ -12,7 +12,7 @@ const EXCLUDED_PREFIXES = [
   '/favicon.ico',
 ];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Skip static assets and API routes
